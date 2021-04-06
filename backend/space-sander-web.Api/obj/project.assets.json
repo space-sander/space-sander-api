@@ -75,6 +75,16 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "space-sander-web.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/space-sander-web.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/space-sander-web.Domain.dll": {}
+        }
       }
     }
   },
@@ -185,11 +195,17 @@
         "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "space-sander-web.Domain/1.0.0": {
+      "type": "project",
+      "path": "../space-sander-web.Domain/space-sander-web.Domain.csproj",
+      "msbuildProject": "../space-sander-web.Domain/space-sander-web.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Swashbuckle.AspNetCore >= 5.6.3"
+      "Swashbuckle.AspNetCore >= 5.6.3",
+      "space-sander-web.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -216,7 +232,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\jcmar\\OneDrive\\Desktop\\OSU Spring 2021\\3610\\group Proj\\repos\\space-sander-api\\space-sander-api\\backend\\space-sander-web.Domain\\space-sander-web.Domain.csproj": {
+              "projectPath": "C:\\Users\\jcmar\\OneDrive\\Desktop\\OSU Spring 2021\\3610\\group Proj\\repos\\space-sander-api\\space-sander-api\\backend\\space-sander-web.Domain\\space-sander-web.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

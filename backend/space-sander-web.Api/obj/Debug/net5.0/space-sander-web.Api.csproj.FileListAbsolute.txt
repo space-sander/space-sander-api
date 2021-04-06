@@ -27,3 +27,5 @@ C:\Users\jcmar\OneDrive\Desktop\OSU Spring 2021\3610\group Proj\repos\space-sand
 C:\Users\jcmar\OneDrive\Desktop\OSU Spring 2021\3610\group Proj\repos\space-sander-api\space-sander-api\backend\space-sander-web.Api\obj\Debug\net5.0\ref\space-sander-web.Api.dll
 C:\Users\jcmar\OneDrive\Desktop\OSU Spring 2021\3610\group Proj\repos\space-sander-api\space-sander-api\backend\space-sander-web.Api\obj\Debug\net5.0\space-sander-web.Api.pdb
 C:\Users\jcmar\OneDrive\Desktop\OSU Spring 2021\3610\group Proj\repos\space-sander-api\space-sander-api\backend\space-sander-web.Api\obj\Debug\net5.0\space-sander-web.Api.genruntimeconfig.cache
+C:\Users\jcmar\OneDrive\Desktop\OSU Spring 2021\3610\group Proj\repos\space-sander-api\space-sander-api\backend\space-sander-web.Api\bin\Debug\net5.0\space-sander-web.Domain.dll
+C:\Users\jcmar\OneDrive\Desktop\OSU Spring 2021\3610\group Proj\repos\space-sander-api\space-sander-api\backend\space-sander-web.Api\bin\Debug\net5.0\space-sander-web.Domain.pdb
