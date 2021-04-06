@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "4Y93D2DAea+W7diICIwhX/HKl36dt5whmIk/sK1BpfltYi6LM24aKEeOBCeilM2z8ERJLdWZOGjRGX/3sibG6g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jcmar\\OneDrive\\Desktop\\OSU Spring 2021\\3610\\group Proj\\repos\\space-sander-api\\space-sander-api\\backend\\space-sander-web.Api\\space-sander-web.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jcmar\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\jcmar\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\jcmar\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\jcmar\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\jcmar\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\jcmar\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
