@@ -22,7 +22,7 @@ public Rating(int stars, string userName, string review)
     }
 }
 
-}
 this.Star = stars;
 this.UserName = userName;
 this.Review = review;
+}
