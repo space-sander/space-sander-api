@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace space.sander.web.Domain.Catalog
 {
@@ -9,10 +10,14 @@ namespace space.sander.web.Domain.Catalog
         public string Description { get; set; }
         public string brand { get; set; }
         public decimal Price { get; set; }
+        public list<Rating> Ratings { get; set; }
 
     }
 }
-
+public void AddRating(Rating rating)
+{
+    this.Ratings.Add(rating);
+}
 public Item(string name, string description, string brand, decimal)
 {
     if (string.IsNullOrEmpty(name))

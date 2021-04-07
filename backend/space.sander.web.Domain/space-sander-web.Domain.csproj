@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>space_sander_web.Domain</RootNamespace>
+    <RootNamespace>space.sander.web.Domain</RootNamespace>
   </PropertyGroup>
 
 </Project>
