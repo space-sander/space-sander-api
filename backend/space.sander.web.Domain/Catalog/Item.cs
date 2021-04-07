@@ -12,3 +12,8 @@ namespace space.sander.web.Domain.Catalog
 
     }
 }
+
+public Item(string name, string description, string brand, decimal)
+{
+    
+}
