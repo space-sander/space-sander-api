@@ -7,7 +7,7 @@ namespace space.sander.web.Domain.Catalog
         public string UserName { get; set; }
         public string Review { get; set;}
     }
-}
+
 
 public Rating(int stars, string userName, string review)
 {
@@ -22,6 +22,7 @@ public Rating(int stars, string userName, string review)
     }
 }
 
+}
 this.Star = stars;
 this.UserName = userName;
 this.Review = review;
