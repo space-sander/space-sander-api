@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace space_sander_web.Api
+namespace space.sander.web.Api
 {
     public class Program
     {

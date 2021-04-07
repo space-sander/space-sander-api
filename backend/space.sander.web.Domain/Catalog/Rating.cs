@@ -1,13 +1,19 @@
 using System;
+using System.Diagnostics;
 
 namespace space.sander.web.Domain.Catalog
 {
+    [DebuggerDisplay("{" + nameof(GetDebuggerDisplay) + "(),nq}")]
     public class Rating
     {
         public int Star { get; set; }
         public string UserName { get; set; }
-        public string Review { get; set;}
+        public string Review { get; set; }
 
+        private string GetDebuggerDisplay()
+        {
+            return ToString();
+        }
     public Rating(int stars, string userName, string review)
     {
         if (stars < 1 || stars > 5)
@@ -19,11 +25,14 @@ namespace space.sander.web.Domain.Catalog
         {
             throw new ArgumentException("UserName cannot be null.");
         }
+
         this.Star = stars;
         this.UserName = userName;
         this.Review = review;
-    }
+
+        
 
     }
+}
 }
 

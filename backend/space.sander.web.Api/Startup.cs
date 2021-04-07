@@ -12,7 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 
-namespace space_sander_web.Api
+namespace space.sander.web.Api
 {
     public class Startup
     {
@@ -30,7 +30,7 @@ namespace space_sander_web.Api
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "space_sander_web.Api", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "space.sander.web.Api", Version = "v1" });
             });
         }
 
@@ -41,7 +41,7 @@ namespace space_sander_web.Api
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "space_sander_web.Api v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "space.sander.web.Api v1"));
             }
 
             app.UseHttpsRedirection();

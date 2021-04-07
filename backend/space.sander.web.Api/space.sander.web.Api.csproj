@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>space_sander_web.Api</RootNamespace>
+    <RootNamespace>space.sander.web.Api</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\space-sander-web.Domain\space-sander-web.Domain.csproj" />
+    <ProjectReference Include="..\space.sander.web.Domain\space.sander.web.Domain.csproj" />
   </ItemGroup>
 
 </Project>
