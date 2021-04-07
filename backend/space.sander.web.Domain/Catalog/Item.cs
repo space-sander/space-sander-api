@@ -13,7 +13,7 @@ namespace space.sander.web.Domain.Catalog
         public list<Rating> Ratings { get; set; }
 
     }
-}
+
 public void AddRating(Rating rating)
 {
     this.Ratings.Add(rating);
@@ -46,3 +46,4 @@ public Item(string name, string description, string brand, decimal price)
     this.Price = price;
 }
 
+}
