@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "space-sander-web.Domain", "space-sander-web.Domain\space-sander-web.Domain.csproj", "{953224FE-E0F4-4038-9187-1871859B5942}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "space.sander.web.Domain", "space.sander.web.Domain\space.sander.web.Domain.csproj", "{953224FE-E0F4-4038-9187-1871859B5942}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "space-sander-web.Api", "space-sander-web.Api\space-sander-web.Api.csproj", "{77B4B6D8-D32B-4C6A-AB98-73589600D620}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "space.sander.web.Api", "space.sander.web.Api\space.sander.web.Api.csproj", "{77B4B6D8-D32B-4C6A-AB98-73589600D620}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
