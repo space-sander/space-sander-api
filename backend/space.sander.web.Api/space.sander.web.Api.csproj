@@ -6,11 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\space.sander.web.Domain\space.sander.web.Domain.csproj" />
+    <ProjectReference Include="..\space.sander.web.Data\space.sander.web.Data.csproj" />
   </ItemGroup>
 
 </Project>
