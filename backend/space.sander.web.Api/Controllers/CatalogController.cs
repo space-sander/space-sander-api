@@ -1,4 +1,3 @@
-using System.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
@@ -78,7 +77,7 @@ namespace space.sander.web.Api.Controllers
 
         _db.Items.Remove(item);
         _db.SaveChanges();
-        
+
         return Ok();
     }
     }
