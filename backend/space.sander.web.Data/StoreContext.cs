@@ -1,6 +1,7 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using space.sander.web.Domain.Catalog;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace space.sander.web.Data
 {
@@ -11,5 +12,7 @@ namespace space.sander.web.Data
         {}
 
         public DbSet<Item> Items { get; set; }
+
+        public DbSet<Order> Orders { get; set; }
     }
 }
