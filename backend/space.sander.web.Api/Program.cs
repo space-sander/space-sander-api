@@ -6,6 +6,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using space.sander.web.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+
 
 namespace space.sander.web.Api
 {
@@ -13,7 +17,9 @@ namespace space.sander.web.Api
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            var host = CreateHostBuilder(args).Build();
+            CreateDbIfNotExists(host);
+            host.Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -22,5 +28,26 @@ namespace space.sander.web.Api
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
+        public static void CreateDbIfNotExists(IHost host)
+        {
+            using (var scope = host.Services.CreateScope()) 
+            {
+                var services = scope.ServiceProvider;
+                var logger = services.GetRequiredService<ILogger<Program>>();
+
+                try
+                {
+                    var context = services.GetRequiredService<StoreContext>();
+                    context.Database.EnsureCreated();
+                    DbInitializer.Initialize(context, logger);
+
+                }
+                catch (Exception ex)
+                {
+                    logger.LogError(ex, "Error occured creating the databse.");
+                }
+            }
+        }
     }
 }
