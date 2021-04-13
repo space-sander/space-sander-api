@@ -1,5 +1,5 @@
-﻿using System;
-using space.sander.web.Domain.Catalog;
+﻿using space.sander.web.Domain.Catalog;
+using space.sander.web.Domain.Orders;
 using Microsoft.EntityFrameworkCore;
 
 namespace space.sander.web.Data
@@ -11,5 +11,7 @@ namespace space.sander.web.Data
         {}
 
         public DbSet<Item> Items { get; set; }
+
+        public DbSet<Order> Orders { get; set; }
     }
 }
