@@ -6,6 +6,11 @@ namespace space_sander_web.Domain.Tests
     public class UnitTest1
     {
         [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void Create_With_Bad_Start_Trows_Error()
+        {
+            var rating = new Rating (0, "Name", "Review");
+        }
         public void Can_Create_New_Rating()
         {
             //Arrange
