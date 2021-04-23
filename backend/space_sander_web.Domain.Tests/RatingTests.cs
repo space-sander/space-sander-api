@@ -1,4 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using space.sander.web.Domain.Catalog;
 
 namespace space_sander_web.Domain.Tests
 {
@@ -6,11 +8,6 @@ namespace space_sander_web.Domain.Tests
     public class UnitTest1
     {
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
-        public void Create_With_Bad_Start_Trows_Error()
-        {
-            var rating = new Rating (0, "Name", "Review");
-        }
         public void Can_Create_New_Rating()
         {
             //Arrange
@@ -22,6 +19,12 @@ namespace space_sander_web.Domain.Tests
             Assert.AreEqual(1, rating.Star);
             Assert.AreEqual("Mike", rating.UserName);
             Assert.AreEqual("Great fit!", rating.Review);
+        }
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void Create_With_Bad_Start_Trows_Error()
+        {
+            var rating = new Rating (0, "Name", "Review");
         }
     }
 }
