@@ -31,7 +31,13 @@ namespace space.sander.web.Api
             services.AddDbContext<StoreContext>(opt =>
                 opt.UseSqlite(Configuration.GetConnectionString("LocalDb"),
                     b => b.MigrationsAssembly("space.sander.web.Api")));
-
+            services.AddCors(options => 
+        {
+            options.AddDefaultPolicy(builder =>
+            {
+                builder.WithOrigins("*");
+            });
+        });
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -39,6 +45,7 @@ namespace space.sander.web.Api
             });
         }
 
+        
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -59,6 +66,8 @@ namespace space.sander.web.Api
             {
                 endpoints.MapControllers();
             });
+
+            app.UseCors();
         }
     }
 }
