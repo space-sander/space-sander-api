@@ -26,5 +26,7 @@ namespace space_sander_web.Domain.Tests
         {
             var rating = new Rating (0, "Name", "Review");
         }
+
+
     }
 }
