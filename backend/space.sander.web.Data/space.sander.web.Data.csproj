@@ -3,7 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\space.sander.web.Domain\space.sander.web.Domain.csproj" />
   </ItemGroup>
-
+ 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.5" />
   </ItemGroup>
