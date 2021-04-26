@@ -11,7 +11,7 @@ namespace space_sander_web.Domain.Tests
         public void Can_Create_New_Item()
         {
             //Arrange
-            var item = new Item("Name", "Description", "Brand", 10.00m);
+            var item = new Item("Name", "Description", "Brand", "imageUrl", 10.00m);
             
             //Act - skip because there isn't action on constructor
 
