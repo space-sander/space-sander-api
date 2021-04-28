@@ -31,13 +31,6 @@ namespace space.sander.web.Api
             services.AddDbContext<StoreContext>(opt =>
                 opt.UseSqlite(Configuration.GetConnectionString("LocalDb"),
                     b => b.MigrationsAssembly("space.sander.web.Api")));
-
-            services.AddCors(options =>
-            {
-                    options.AddDefaultPolicy(builder =>
-                    {
-                        builder.WithOrigins("*");
-                    });
             services.AddCors(options => 
             {   
                 options.AddDefaultPolicy(builder =>
