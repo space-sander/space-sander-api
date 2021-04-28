@@ -31,7 +31,7 @@ namespace space_sander_web.Domain.Tests
         public void Can_Create_Add_Rating()
         {
             //Arrange
-            var item = new Item("Name", "Description", "Brand", 10.00m);
+            var item = new Item("Name", "Description", "Brand", "ImageUrl", 10.00m);
             var rating = new Rating(5,"Name","Review");
             //Act
             item.AddRating(rating);
