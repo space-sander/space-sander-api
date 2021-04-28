@@ -32,12 +32,12 @@ namespace space.sander.web.Api
                 opt.UseSqlite(Configuration.GetConnectionString("LocalDb"),
                     b => b.MigrationsAssembly("space.sander.web.Api")));
             services.AddCors(options => 
-        {
-            options.AddDefaultPolicy(builder =>
-            {
-                builder.WithOrigins("*");
+            {   
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.WithOrigins("*");
+                });
             });
-        });
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

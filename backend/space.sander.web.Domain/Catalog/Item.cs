@@ -38,6 +38,7 @@ namespace space.sander.web.Domain.Catalog
         this.Description = description;
         this.Brand = brand;
         this.Price = price;
+        this.Ratings = new List<Rating>();
     }  
     public void AddRating(Rating rating)
     {
