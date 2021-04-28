@@ -10,9 +10,11 @@ namespace space.sander.web.Domain.Catalog
         public string Description { get; set; }
         public string Brand { get; set; }
         public decimal Price { get; set; }
+
+        public string ImageUrl{ get; set;}
         public List<Rating> Ratings { get; set; }
 
-    public Item(string name, string description, string brand, decimal price)
+    public Item(string name, string description, string brand, string imageUrl, decimal price)
     {
         if (string.IsNullOrEmpty(name))
         { 
@@ -23,6 +25,12 @@ namespace space.sander.web.Domain.Catalog
         { 
             throw new ArgumentException("Item description cannot be null.");
         }
+
+        if(string.IsNullOrEmpty(imageUrl))
+        { 
+            throw new ArgumentException("Image path cannot be null.");
+        }
+
 
         if(string.IsNullOrEmpty(brand))
         {
@@ -36,6 +44,7 @@ namespace space.sander.web.Domain.Catalog
 
         this.Name = name;
         this.Description = description;
+        this.ImageUrl = imageUrl;
         this.Brand = brand;
         this.Price = price;
         this.Ratings = new List<Rating>();
